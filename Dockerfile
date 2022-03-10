@@ -17,5 +17,5 @@ RUN git checkout c63bb48
 RUN pip3 install -e .
 
 RUN mkdir /models/ 
-RUN wget -o /models/model.pth.tar https://github.com/techiaith/docker-coqui-tts-cy/releases/download/22.03/techiaith_bangor_22.03.pth.tar
-RUN wget -o /models/config.json https://github.com/techiaith/docker-coqui-tts-cy/releases/download/22.03/techiaith_bangor_22.03.config.json
+RUN wget -O /models/model.pth.tar https://github.com/techiaith/docker-coqui-tts-cy/releases/download/22.03/techiaith_bangor_22.03.pth.tar
+RUN wget -O /models/config.json https://github.com/techiaith/docker-coqui-tts-cy/releases/download/22.03/techiaith_bangor_22.03.config.json
