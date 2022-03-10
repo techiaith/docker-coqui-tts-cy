@@ -17,5 +17,5 @@ RUN git checkout c63bb48
 RUN pip3 install -e .
 
 RUN mkdir /models/ 
-RUN curl -o /models/model.pth.tar https://tts.techiaith.cymru/speech-api-ui-static/demo/model.pth.tar
-RUN curl -o /models/config.json https://tts.techiaith.cymru/speech-api-ui-static/demo/config.json
+RUN curl -o /models/model.pth.tar https://github.com/techiaith/docker-coqui-tts-cy/releases/download/22.03/techiaith_bangor_22.03.pth.tar
+RUN curl -o /models/config.json https://github.com/techiaith/docker-coqui-tts-cy/releases/download/22.03/techiaith_bangor_22.03.config.json
