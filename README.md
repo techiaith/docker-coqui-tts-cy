@@ -1,6 +1,6 @@
 # docker-coqui-tts-cy
 
-## Llais Synthedig
+## Llais Synthetig
 
 I gael mynediad i'r lleisiau trwy borwr, rhedwch `docker compose up` ac wedyn ewch i http://localhost:5002.
 
