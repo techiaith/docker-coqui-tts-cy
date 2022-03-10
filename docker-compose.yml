@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+
+  web:
+    build: .
+    command: [ "python3", "/tmp/TTS/TTS/server/server.py", "--model_path", "/models/model.pth.tar", "--config_path", "/models/config.json" ]
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./exports:/exports
+      - ./assets/uti-logo-green.png:/tmp/TTS/TTS/server/static/coqui-log-green-TTS.png
+      - ./assets/speech.py:/tmp/TTS/uti_speech.py
+
